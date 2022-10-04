@@ -17,7 +17,7 @@ public class MathGame {
 
     private int illegalArgumentCount = 0;
 
-    private static final int MAX_PRIME = 2;
+    private static final int MIN_PRIME = 2;
 
     private static final char SYMBOL_MULTI = '*';
 
@@ -51,7 +51,7 @@ public class MathGame {
     }
 
     public List<Integer> primeFactors(int number) {
-        if (number < MAX_PRIME) {
+        if (number < MIN_PRIME) {
             illegalArgumentCount++;
             throw new IllegalArgumentException("number is: " + number + ", need >= 2");
         }
