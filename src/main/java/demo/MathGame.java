@@ -1,8 +1,8 @@
 package demo;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import demo.dto.Type;
+
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -20,6 +20,18 @@ public class MathGame {
     private static final int MIN_PRIME = 2;
 
     private static final char SYMBOL_MULTI = '*';
+
+    private static final Map m = new HashMap();
+
+    private static final Map n = new HashMap<>();
+
+    static {
+        m.put("a", "aaa");
+        m.put("b", "bbb");
+
+        n.put(Type.RUN, "aaa");
+        n.put(Type.STOP, "bbb");
+    }
 
     public static void main(String[] args) throws InterruptedException {
         MathGame game = new MathGame();
